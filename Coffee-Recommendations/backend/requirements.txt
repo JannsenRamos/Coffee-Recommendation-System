@@ -1,0 +1,15 @@
+# Requirements.txt
+
+Flask==2.3.3
+Flask-CORS==4.0.0
+pandas==2.1.1
+numpy==1.26.0
+sentence-transformers==2.2.2
+transformers==4.30.2
+huggingface_hub==0.15.1
+faiss-cpu==1.7.4
+torch==2.0.1
+
+# If using GPU, replace faiss-cpu with faiss-gpu
+# torch should be installed separately based on your CUDA version
+# See: https://pytorch.org/get-started/locally/
