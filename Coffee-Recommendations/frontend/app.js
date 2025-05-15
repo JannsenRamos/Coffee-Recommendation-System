@@ -6,8 +6,7 @@ const App = () => {
     const [sentiment, setSentiment] = React.useState(null);
     const [searched, setSearched] = React.useState(false);
     const [error, setError] = React.useState(null);
-    
-    // API endpoint - replace with your actual backend URL
+
     const API_URL = "http://localhost:5000/api/recommend";
     
     const handleSearch = async () => {
