@@ -69,7 +69,7 @@ const App = () => {
                 {sentiment && (
                     <div className="sentiment-info">
                         <p>
-                            <span className="sentiment-label">Sentiment analysis:</span> {sentiment.label} (confidence: {(sentiment.score * 100).toFixed(0)}%)
+                            <span className={`sentiment-label-${sentiment.label}`}>Sentiment analysis:</span> {sentiment.label} (confidence: {(sentiment.score * 100).toFixed(0)}%)
                         </p>
                         <p>
                             {sentiment.label === "POSITIVE" 
