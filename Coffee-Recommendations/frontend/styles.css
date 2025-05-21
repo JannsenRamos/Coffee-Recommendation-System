@@ -224,10 +224,18 @@ header h1 {
     font-size: 0.9rem;
 }
 
-.sentiment-label {
+.sentiment-label-Positive {
     font-weight: bold;
-    color: var(--primary);
+    background-color: #e9ffe1;
+    color: #51CB20;
 }
+
+.sentiment-label-Negative {
+    font-weight: bold;
+    background-color: #ffebee;
+    color: #c62828;
+}
+
 
 footer {
     text-align: center;

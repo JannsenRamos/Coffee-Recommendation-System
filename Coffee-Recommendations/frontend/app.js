@@ -6,8 +6,7 @@ const App = () => {
     const [sentiment, setSentiment] = React.useState(null);
     const [searched, setSearched] = React.useState(false);
     const [error, setError] = React.useState(null);
-    
-    // API endpoint - replace with your actual backend URL
+
     const API_URL = "http://localhost:5000/api/recommend";
     
     const handleSearch = async () => {
@@ -70,7 +69,7 @@ const App = () => {
                 {sentiment && (
                     <div className="sentiment-info">
                         <p>
-                            <span className="sentiment-label">Sentiment analysis:</span> {sentiment.label} (confidence: {(sentiment.score * 100).toFixed(0)}%)
+                            <span className={`sentiment-label-${sentiment.label}`}>Sentiment analysis:</span> {sentiment.label} (confidence: {(sentiment.score * 100).toFixed(0)}%)
                         </p>
                         <p>
                             {sentiment.label === "POSITIVE" 
